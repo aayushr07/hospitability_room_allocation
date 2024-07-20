@@ -27,7 +27,12 @@ This web application helps in digitalizing the hospitality process for group acc
 
 5. Python main.py
    
-6. http://127.0.0.1.5000   
+6. http://127.0.0.1.5000
+
+7. After Opening Attach the CSV files of Group_info and Hostel_info
+
+    
+   
 
 
 ## Breif Explanation of the Logic
@@ -57,15 +62,3 @@ This web application helps in digitalizing the hospitality process for group acc
    - The allocation results are displayed on the web interface.
    - Users can download the allocation details as a CSV file.
 
-### Example Allocation Logic
-
-1. Input Data:
-
-   Group Information CSV:
-   
-   Group ID,Members,Gender
-   101,3,Boys
-   102,4,Girls
-   103,2,Boys
-   104,5,Girls
-   105,8,Boys & Girls
