@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Hospitality Room Allocation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload CSV Files</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="group_file">Group Information CSV</label>
+            <input type="file" id="group_file" name="group_file" required><br><br>
+            <label for="hostel_file">Hostel Information CSV</label>
+            <input type="file" id="hostel_file" name="hostel_file" required><br><br>
+            <button type="submit">Upload and Allocate</button>
+        </form>
+        {% if allocations %}
+        <h2>Room Allocations</h2>
+        <table>
+            <tr>
+                <th>Group ID</th>
+                <th>Hostel Name</th>
+                <th>Room Number</th>
+                <th>Members Allocated</th>
+            </tr>
+            {% for allocation in allocations %}
+            <tr>
+                <td>{{ allocation['Group ID'] }}</td>
+                <td>{{ allocation['Hostel Name'] }}</td>
+                <td>{{ allocation['Room Number'] }}</td>
+                <td>{{ allocation['Members Allocated'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="{{ url_for('main.download_allocations') }}">Download Allocations</a>
+        {% endif %}
+    </div>
+</body>
+</html>

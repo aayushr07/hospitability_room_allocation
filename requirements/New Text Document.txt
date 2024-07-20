@@ -1,0 +1,4 @@
+Flask
+Pandas
+#to install all requirement on the virtual env 
+#pip install -r requirements.txt
