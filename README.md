@@ -17,13 +17,17 @@ This web application helps in digitalizing the hospitality process for group acc
    cd hospitality_app
 
 2. python3 -m venv venv
-   .\venv\Scripts\activate      #for windows to activate the virtual env
-   source venv/bin/activate     #for mac os to activate the virtual env
+   #for windows to activate the virtual env
+   .\venv\Scripts\activate
+   #for mac os to activate the virtual env      
+   source venv/bin/activate     
    pip install -r requirements.txt
 
-3. Python main.py
+3. mkdir uploads ( This is only necessary if there is no uploads folder present after cloning the Repo, Else ignore this command.)
+
+5. Python main.py
    
-4. http://127.0.0.1.5000   
+6. http://127.0.0.1.5000   
 
 
 ## Breif Explanation of the Logic
