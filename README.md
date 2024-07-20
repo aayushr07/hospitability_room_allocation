@@ -16,12 +16,12 @@ This web application helps in digitalizing the hospitality process for group acc
    git clone <repository_url>
    cd hospitality_app
 
-2. python3 -m venv venv
-   #for windows to activate the virtual env
-   .\venv\Scripts\activate
-   #for mac os to activate the virtual env      
-   source venv/bin/activate     
-   pip install -r requirements.txt
+2. "python3 -m venv venv"       
+   #for windows to activate the virtual env#
+   ".\venv\Scripts\activate"
+   #for mac os to activate the virtual env#      
+   "source venv/bin/activate"     \n
+   "pip install -r requirements.txt"
 
 3. mkdir uploads ( This is only necessary if there is no uploads folder present after cloning the Repo, Else ignore this command.)
 
